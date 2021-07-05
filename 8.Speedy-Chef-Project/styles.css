@@ -1,0 +1,197 @@
+body {
+  display: flex;
+  flex-direction: column;
+  background: rgb(224, 209, 180);
+  color: rgb(71, 71, 71);
+  font-size: 16px;
+}
+
+aside {
+  margin-left: 10px;
+  flex: 1;
+  padding: 10px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+h3 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 28px;
+  background: rgb(255, 169, 71);
+  padding: 5px;
+  /* stop background being full width of section */
+  width: fit-content;
+  margin: 20px auto;
+  transform: rotate(-2deg);
+}
+
+/* orders ul */
+ul {
+  font-family: courier, monospace;
+  font-size: 14px;
+  padding: 0;
+  border: 1px solid #b7adad;
+}
+
+/* orders li */
+li {
+  text-indent: 15px;
+  border-bottom: 1px dotted rgb(159, 158, 158);
+  padding: 5px;
+  list-style: none;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+#kitchen_main {
+  display: flex;
+  flex-direction: column;
+}
+
+#working_on,
+#method,
+#stats,
+#oven_wrapper,
+#message_area,
+#kitchen_area,
+#game_controls {
+  padding: 10px;
+  border-radius: 3px;
+  background: rgb(241, 241, 241);
+}
+
+#game_controls {
+  grid-area: game-controls;
+}
+
+#working_on {
+  grid-area: working_on;
+}
+#method {
+  grid-area: method;
+}
+
+#oven_wrapper {
+  grid-area: oven_wrapper;
+}
+
+#message_area {
+  grid-area: message;
+}
+
+#kitchen_area {
+  grid-area: kitchen;
+}
+
+main {
+  flex: 3;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 3fr 1fr 3fr;
+  grid-gap: 10px;
+  grid-template-areas:
+    'game-controls game-controls game-controls'
+    'working_on method oven_wrapper'
+    'message message message'
+    'kitchen kitchen kitchen';
+}
+
+.order_wrapper {
+  cursor: pointer;
+}
+
+#stats {
+  display: none;
+}
+
+#ingredients span {
+  display: inline-block;
+  margin: 5px 15px;
+  background: hotpink;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.ingredient {
+  background: rgb(224, 209, 180);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-size: 18px;
+  border-radius: 3px;
+  padding: 10px 20px;
+  margin: 5px 10px;
+}
+
+.oven_btn {
+  background: rgb(243, 204, 78);
+}
+.complete_btn {
+  background: rgb(152, 244, 211);
+}
+.delete_btn {
+  background: rgb(246, 124, 124);
+}
+#pizza_name {
+  cursor: pointer;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+#message {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  min-height: 40px;
+}
+
+#startBtn {
+  background: rgb(165, 217, 165);
+}
+
+img {
+  max-width: 100px;
+}
+
+.pizzaDiv {
+  display: inline-block;
+  text-align: center;
+}
+
+.fade-in {
+  animation: fadeIn ease 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.kitchen_right {
+  padding-top: 20px;
+}
+
+@media screen and (min-width: 900px) {
+  body {
+    flex-direction: row;
+  }
+  #kitchen_main {
+    flex-direction: row;
+  }
+  .kitchen_left {
+    flex: 1;
+  }
+  .kitchen_right {
+    flex: 1;
+  }
+}

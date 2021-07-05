@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Adding Elements To The Page</title>
+    <style>
+      body {
+        margin: 0 auto;
+        color: rgb(89, 88, 88);
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+      }
+
+      .green {
+        color: rgb(40, 141, 40);
+      }
+
+      .nav-inline {
+        display: flex;
+        list-style: none;
+      }
+
+      .nav-item {
+        font-size: 18px;
+        margin: 0 5px;
+        text-transform: uppercase;
+        font-weight: bolder;
+        color: rgb(89, 88, 88);
+        cursor: pointer;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      section {
+        text-align: center;
+      }
+
+      .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .content > div {
+        flex: 1;
+        padding: 1rem;
+        font-size: 18px;
+      }
+
+      button {
+        background: rgb(40, 141, 40);
+        border: none;
+        border-radius: 3px;
+        padding: 10px 15px;
+        cursor: pointer;
+        font-weight: bolder;
+        color: whitesmoke;
+      }
+
+      button:hover {
+        background: rgb(130, 236, 120);
+      }
+
+      .info_section p {
+        font-style: italic;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1 id="site-title"><span class="green">No Meat</span> Burgers</h1>
+      <nav>
+        <ul class="nav-inline">
+          <li class="nav-item">our burgers</li>
+          <li class="nav-item">history</li>
+        </ul>
+      </nav>
+    </header>
+    <img src="burger.jpg" />
+
+    <section>
+      <h3>Helping the planet, one bite at a time...</h3>
+      <div class="content">
+        <div class="image_section">
+          <img src="burger.jpg" alt="burger image" />
+        </div>
+        <div class="info_section">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore aut
+            unde sunt.
+          </p>
+          <button>BUY ONLINE</button>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // ========= SECTION HEADING =========
+      const sectionHeading = document.createElement('h3');
+      const headingText = document.createTextNode(
+        'Helping the planet, one bite at a time...'
+      );
+      sectionHeading.appendChild(headingText);
+
+      // ========= IMAGE =========
+      const imageElement = document.createElement('img');
+      imageElement.setAttribute('src', 'burger.jpg');
+      imageElement.setAttribute('alt', 'burger image');
+
+      // ========= INFO TEXT =========
+      const infoSectionElement = document.createElement('p');
+      const infoSectionText = document.createTextNode(
+        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore aut unde sunt.'
+      );
+      infoSectionElement.appendChild(infoSectionText);
+
+      // ========= BUTTON =========
+      const buttonElement = document.createElement('button');
+      const buttonText = document.createTextNode('BUY ONLINE');
+      buttonElement.appendChild(buttonText);
+
+      // ========= WRAPPERS =========
+      const sectionWrapper = document.createElement('section');
+      const contentWrapper = document.createElement('div');
+      const imageDivElement = document.createElement('div');
+      const textDivElement = document.createElement('div');
+
+      // ========= PUTTING IT ALL TOGETHER =========
+      textDivElement.appendChild(infoSectionElement);
+      textDivElement.appendChild(buttonElement);
+
+      imageDivElement.appendChild(imageElement);
+
+      contentWrapper.appendChild(imageDivElement);
+      contentWrapper.appendChild(textDivElement);
+
+      sectionWrapper.appendChild(sectionHeading);
+      sectionWrapper.appendChild(contentWrapper);
+
+      // ========= ADDING CLASSES =========
+      contentWrapper.setAttribute('class', 'content');
+      imageDivElement.setAttribute('class', 'image_section');
+      textDivElement.setAttribute('class', 'info_section');
+
+      // ADD TO PAGE
+    </script>
+  </body>
+</html>

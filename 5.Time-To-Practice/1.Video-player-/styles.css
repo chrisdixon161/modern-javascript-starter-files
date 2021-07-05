@@ -1,0 +1,53 @@
+video {
+  width: 100%;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div,
+progress {
+  margin-bottom: 20px;
+}
+
+progress {
+  width: 100%;
+}
+
+button {
+  background: rgb(153, 166, 178);
+  color: rgb(45, 45, 45);
+  border: none;
+  font-size: 20px;
+  padding: 10px 15px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+button:hover {
+  transform: scale(1.03);
+}
+
+.round {
+  border: 4px solid rgb(153, 166, 178);
+  background: none;
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+}
+
+.skip {
+  font-size: 36px;
+  cursor: pointer;
+  background: none;
+  color: rgb(153, 166, 178);
+  padding: 0;
+}
+
+.align {
+  display: flex;
+}

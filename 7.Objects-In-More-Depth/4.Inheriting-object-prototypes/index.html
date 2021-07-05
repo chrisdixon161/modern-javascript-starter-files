@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Inheriting Object Prototypes</title>
+  </head>
+
+  <body>
+    <script>
+      function User(first, last, occupation, lives) {
+        this.firstName = first;
+        this.lastName = last;
+        this.occupation = occupation;
+        this.lives = lives;
+      }
+
+      const chris = new User('Chris', 'Dixon', 'Dev', 'UK');
+      const homer = new User(
+        'Homer',
+        'Simpson',
+        'Safety Inspector',
+        'Springfield'
+      );
+
+      console.log(homer);
+    </script>
+  </body>
+</html>

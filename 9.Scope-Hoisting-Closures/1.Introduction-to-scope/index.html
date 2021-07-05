@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Introduction To Scope</title>
+  </head>
+
+  <body>
+    <script>
+      // var, let, const
+      var score = 0;
+
+      function updateScore() {
+        score++;
+        var bonus = 10;
+        console.log(score + bonus);
+      }
+      updateScore();
+    </script>
+  </body>
+</html>

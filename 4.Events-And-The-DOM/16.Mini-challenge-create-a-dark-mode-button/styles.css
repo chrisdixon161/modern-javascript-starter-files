@@ -1,0 +1,32 @@
+body {
+  color: rgb(62, 62, 62);
+  background: rgb(249, 246, 246);
+}
+
+.dark {
+  color: rgb(219, 219, 219);
+  background: rgb(44, 36, 36);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  border: none;
+  background: none;
+  font-size: 30px;
+}
+
+article,
+aside {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 10px;
+}

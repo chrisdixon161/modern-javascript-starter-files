@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Handling Multiple Promises</title>
+  </head>
+
+  <body>
+    <script>
+      const promise1 = fetch('https://dog.ceo/api/breeds/image/random').then(
+        function (response) {
+          return response.json();
+        }
+      );
+
+      const promise2 = new Promise(function (resolve, reject) {
+        setTimeout(resolve, 2000);
+      });
+    </script>
+  </body>
+</html>

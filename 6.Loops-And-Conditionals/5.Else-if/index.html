@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Else If</title>
+  </head>
+
+  <body>
+    <script>
+      let user = { name: 'Chris', role: 'subscriber' };
+      if (user) {
+        console.log('user logged in...');
+        if (user.role === 'admin') {
+          console.log('hey admin!');
+        } else {
+          console.log('hey user!');
+        }
+      } else {
+        console.log('user logged out');
+      }
+    </script>
+  </body>
+</html>

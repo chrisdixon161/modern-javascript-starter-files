@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Callback Functions</title>
+  </head>
+
+  <body>
+    <ul></ul>
+    <script>
+      let users = [];
+      function getUsersFromDatabase() {
+        users = [
+          {
+            name: 'Chris',
+            occupation: 'Developer',
+          },
+          {
+            name: 'Homer',
+            occupation: 'Safety Inspector',
+          },
+        ];
+      }
+      getUsersFromDatabase();
+    </script>
+  </body>
+</html>

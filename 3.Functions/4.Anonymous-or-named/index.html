@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Anonymous Or Named?</title>
+  </head>
+
+  <body>
+    <h1 id="title">Anonymous Or Named?</h1>
+    <script>
+      let bread = ['flour', 'yeast', 'salt', 'water'];
+      let brownies = ['butter', 'chocolate', 'flour', 'eggs', 'sugar'];
+
+      // named function
+      function numberOfIngredients(recipe) {
+        return recipe.length;
+      }
+      // anonymous
+      const checkAllergies = function (recipe, ingredient) {
+        const hasIngredient = recipe.includes(ingredient);
+        return hasIngredient;
+      };
+
+      // ===============================================
+      // let posts = [
+      //   { title: 'How to learn Javascript', body: 'bla bla bla' },
+      //   { title: 'How to be a ninja', body: 'bla bla bla' },
+      //   { title: 'How to be a ninja part 2', body: 'bla bla bla' },
+      // ];
+
+      const getIndex = posts
+        .map(function (post) {
+          return post.title.toupperCase();
+        })
+        .findIndex(function (value) {
+          return value === 'HOW TO BE A NINJA PART 2';
+        });
+      console.log(getIndex);
+    </script>
+  </body>
+</html>

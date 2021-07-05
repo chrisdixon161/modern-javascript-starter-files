@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Conditional Operator (ternary)</title>
+  </head>
+
+  <body>
+    <p id="edit"></p>
+    <script>
+      let user = { name: 'Chris', role: 'admin' };
+      let canEdit = false;
+
+      if (user.role === 'admin') {
+        canEdit = true;
+      } else {
+        canEdit = false;
+      }
+
+      document.querySelector('#edit').innerText = canEdit;
+    </script>
+  </body>
+</html>

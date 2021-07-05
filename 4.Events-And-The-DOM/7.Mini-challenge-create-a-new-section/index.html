@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Mini Challenge: Create a New Section With Javascript</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=RocknRoll+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1 id="site-title"><span class="green">No Meat</span> Burgers</h1>
+      <nav>
+        <ul class="nav-inline">
+          <li class="nav-item">our burgers</li>
+          <li class="nav-item">history</li>
+        </ul>
+      </nav>
+    </header>
+    <img src="burger.jpg" />
+
+    <section class="recipes">
+      <h3>Home cooking time</h3>
+      <p>Some of our chefs recipes you can try at home</p>
+      <button>SEE ALL</button>
+      <div class="recipes_container">
+        <article>
+          <img src="burger.jpg" alt="" />
+          <h4>Ultimate Vegan</h4>
+          <div class="recipe_info">
+            <span>2 people</span> ~ <span>30 mins</span> ~
+            <span>457 calories</span>
+          </div>
+        </article>
+        <article>
+          <img src="burger.jpg" alt="" />
+          <h4>Spicy Bean Burger</h4>
+          <div class="recipe_info">
+            <span>4 people</span> ~ <span>40 mins</span> ~
+            <span>624 calories</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <script>
+      // ========= SECTION HEADING =========
+      const sectionHeading = document.createElement('h3');
+      const headingText = document.createTextNode(
+        'Helping the planet, one bite at a time...'
+      );
+      sectionHeading.appendChild(headingText);
+
+      // ========= IMAGE =========
+      const imageElement = document.createElement('img');
+      imageElement.setAttribute('src', 'burger.jpg');
+      imageElement.setAttribute('alt', 'burger image');
+
+      // ========= INFO TEXT =========
+      const infoSectionElement = document.createElement('p');
+      const infoSectionText = document.createTextNode(
+        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore aut unde sunt.'
+      );
+      infoSectionElement.appendChild(infoSectionText);
+
+      // ========= BUTTON =========
+      const buttonElement = document.createElement('button');
+      const buttonText = document.createTextNode('BUY ONLINE');
+      buttonElement.appendChild(buttonText);
+
+      // ========= WRAPPERS =========
+      const sectionWrapper = document.createElement('section');
+      const contentWrapper = document.createElement('div');
+      const imageDivElement = document.createElement('div');
+      const textDivElement = document.createElement('div');
+
+      // ========= PUTTING IT ALL TOGETHER =========
+      textDivElement.appendChild(infoSectionElement);
+      textDivElement.appendChild(buttonElement);
+
+      imageDivElement.appendChild(imageElement);
+
+      contentWrapper.appendChild(imageDivElement);
+      contentWrapper.appendChild(textDivElement);
+
+      sectionWrapper.appendChild(sectionHeading);
+      sectionWrapper.appendChild(contentWrapper);
+
+      // ========= ADDING CLASSES =========
+      sectionWrapper.setAttribute('class', 'planet_wrapper');
+      contentWrapper.setAttribute('class', 'content');
+      imageDivElement.setAttribute('class', 'image_section');
+      textDivElement.setAttribute('class', 'info_section');
+
+      // ADD TO PAGE
+      document.body.insertBefore(
+        sectionWrapper,
+        document.querySelector('.recipes')
+      );
+    </script>
+  </body>
+</html>

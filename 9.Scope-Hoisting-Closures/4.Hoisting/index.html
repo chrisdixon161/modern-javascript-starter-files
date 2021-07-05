@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Hoisting</title>
+  </head>
+
+  <body>
+    <script>
+      // EXAMPLE 1
+      // =========
+
+      let bread = ['flour', 'yeast', 'salt', 'water'];
+      let brownies = ['butter', 'chocolate', 'flour', 'eggs', 'sugar'];
+
+      console.log(checkAllergies(bread, 'flour'));
+
+      // function declaration
+      function checkAllergies(recipe, ingredient) {
+        const hasIngredient = recipe.includes(ingredient);
+        return hasIngredient;
+      }
+      // function expression
+      // const checkAllergies = function (recipe, ingredient) {
+      //   const hasIngredient = recipe.includes(ingredient);
+      //   return hasIngredient;
+      // };
+
+      // EXAMPLE 2
+      // =========
+      console.log(name);
+      var name = 'Chris';
+    </script>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+html {
+  background: rgb(149, 127, 239);
+  font-family: 'Comfortaa', cursive;
+  color: rgb(60, 60, 60);
+}
+
+body {
+  background: rgb(239, 217, 206);
+  max-width: 600px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+header {
+  background: rgb(222, 192, 241);
+  text-align: center;
+  padding: 10px;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: 2px solid rgb(149, 127, 239);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.drop-section,
+.drag-section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.drag-section > div {
+  cursor: pointer;
+  border: none;
+}
+
+.drag-section {
+  margin-bottom: 20px;
+}
+
+div {
+  margin: 15px;
+  border: 2px solid rgb(183, 156, 237);
+  border-radius: 3px;
+}
+
+.drop {
+  width: 500px;
+  height: 200px;
+  border: 2px solid rgb(183, 156, 237);
+}
+.square {
+  width: 50px;
+  height: 50px;
+  background: rgb(247, 100, 100);
+}
+.square2 {
+  width: 42px;
+  height: 42px;
+  background: rgb(110, 131, 235);
+}
+.rectangle {
+  width: 80px;
+  height: 50px;
+  background: rgb(230, 67, 230);
+}
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background: rgb(245, 183, 68);
+}
+.oval {
+  width: 70px;
+  height: 50px;
+  border-radius: 100%;
+  background: rgb(209, 143, 154);
+}
+.oval2 {
+  width: 75px;
+  height: 50px;
+  border-radius: 100%;
+  background: rgb(223, 100, 161);
+}
+.pill {
+  width: 100px;
+  height: 50px;
+  border-radius: 25px;
+  background: rgb(94, 82, 84);
+}
+.pill2 {
+  width: 110px;
+  height: 52px;
+  border-radius: 25px;
+  background: rgb(163, 104, 231);
+}
+.rectangle2 {
+  width: 60px;
+  height: 50px;
+  background: rgb(137, 228, 230);
+}
+.rectangle3 {
+  width: 50px;
+  height: 60px;
+  background: rgb(146, 209, 146);
+}
+
+.drop {
+  background: none;
+}

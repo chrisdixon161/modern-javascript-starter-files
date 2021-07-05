@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Block & Function Scope</title>
+  </head>
+
+  <body>
+    <script>
+      var score = 0;
+
+      function updateScore() {
+        score++;
+        var bonus = 10;
+        console.log('inside function' + bonus3);
+        if (bonus) {
+          console.log('inside if statement: ' + bonus);
+          var numbers = [1, 5, 8, 2];
+          var i = 0;
+          while (i < numbers.length) {
+            var bonus3 = 30;
+            console.log(bonus);
+            i++;
+          }
+        }
+      }
+      updateScore();
+    </script>
+  </body>
+</html>

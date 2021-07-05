@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Listening For Multiple Events & Event Data</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=RocknRoll+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1 id="site-title"><span class="green">No Meat</span> Burgers</h1>
+      <nav>
+        <ul class="nav-inline">
+          <!-- <li class="nav-item">our burgers</li> -->
+          <!-- <li class="nav-item">history</li> -->
+        </ul>
+      </nav>
+    </header>
+    <img src="burger.jpg" 
+    id="headerImage"  />
+
+    <section class="recipes">
+      <h3>Home cooking time</h3>
+      <p>Some of our chefs recipes you can try at home</p>
+      <button>SEE ALL</button>
+      <div class="recipes_container">
+        <article>
+          
+          <span class="add">&#9734;</span>
+          <img src="burger.jpg" alt="" />
+          <h4 >Ultimate Vegan</h4>
+          
+          <div class="recipe_info">
+            <span>2 people</span> ~ <span>30 mins</span> ~
+            <span>457 calories</span>
+          </div>
+        </article>
+        <article>
+          <span class="add">&#9734;</span>
+          
+          <img src="burger.jpg" alt="" />
+          <h4>Spicy Bean Burger</h4>
+          <div class="recipe_info">
+           
+            <span>4 people</span> ~ <span>40 mins</span> ~
+            <span>624 calories</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <script src="elements.js"></script>
+    <script src="events.js"></script>
+  </body>
+</html>

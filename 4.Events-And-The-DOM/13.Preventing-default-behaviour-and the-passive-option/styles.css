@@ -1,0 +1,135 @@
+html {
+  font-family: 'RocknRoll One', sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  color: rgb(89, 88, 88);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.planet_wrapper {
+  background: #74c69d;
+}
+
+.green {
+  color: rgb(40, 141, 40);
+}
+
+.nav-inline {
+  display: flex;
+  list-style: none;
+}
+
+.nav-item {
+  font-size: 18px;
+  margin: 0 5px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: rgb(89, 88, 88);
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+section {
+  text-align: center;
+  padding: 20px 0;
+}
+
+h3 {
+  font-family: 'Akaya Kanadaka', cursive;
+  font-size: 24px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content > div {
+  flex: 1;
+  padding: 1rem;
+  font-size: 18px;
+}
+
+button {
+  background: rgb(40, 141, 40);
+  border: none;
+  border-radius: 3px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-weight: bolder;
+  color: whitesmoke;
+}
+
+button:hover {
+  background: rgb(130, 236, 120);
+}
+
+.info_section p {
+  font-style: italic;
+}
+
+/* RECIPES SECTION */
+.recipes_container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.recipes h4 {
+  margin: 10px 0;
+}
+
+.recipes article {
+  background: #74c69d;
+  margin: 10px;
+}
+
+.recipe_info {
+  padding: 20px 0;
+}
+
+
+.add {
+  cursor: pointer;
+}
+
+/* FORM SECTION */
+.signup {
+  padding: 10px;
+  background: rgb(249, 230, 205);
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
+
+form > div {
+  padding: 20px 10px;
+}
+
+input {
+  border: none;
+  border-radius: 3px;
+}
+
+input[type=submit] {
+  background: #74c69d;
+  cursor: pointer;
+}

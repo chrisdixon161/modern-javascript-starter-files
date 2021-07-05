@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Looping With Objects</title>
+  </head>
+
+  <body>
+    <script>
+      function User(first, last, occupation, lives) {
+        this.firstName = first;
+        this.lastName = last;
+        this.occupation = occupation;
+        this.lives = lives;
+      }
+
+      // User.prototype.cool = true;
+      // User.prototype.fullName = function () {
+      //   return this.firstName + ' ' + this.lastName;
+      // };
+
+      const homer = new User(
+        'Homer',
+        'Simpson',
+        'Safety Inspector',
+        'Springfield'
+      );
+    </script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+html {
+  font-family: 'RocknRoll One', sans-serif;
+}
+
+
+button {
+  background: rgb(116, 203, 116);
+  border: none;
+  border-radius: 3px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-weight: bolder;
+  color: whitesmoke;
+}
+
+button:hover {
+  background: rgb(130, 236, 120);
+}
+
+#cancel {
+  background: rgb(237, 126, 126);
+}

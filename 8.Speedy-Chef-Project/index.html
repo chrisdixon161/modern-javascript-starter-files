@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Speedy Chef! &#127829;</title>
+</head>
+
+<body>
+  <main>
+    <section id="stats">
+      <h3>Stats</h3>
+      <p>Completed orders: <span id="completedOrders"></span></p>
+      <p>Completed pizzas: <span id="completedPizzas"></span></p>
+      <p>Wasted pizzas: <span id="wastedPizzas"></span></p>
+    </section>
+    <section id="game_controls">
+      <button id="startBtn"">START</button>
+      <button id="endBtn"">END</button>
+      <span id="gameLength"></span>
+    </section>
+    <section id="working_on">
+      <h3>Working on</h3>
+    </section>
+    <section id="method">
+      <h3>Method</h3>
+      <div id="pizza_name"></div>
+      <div id="pizza_method"></div>
+    </section>
+    <section id="oven_wrapper">
+      <h3>Oven</h3>
+      <div id="oven"></div>
+    </section>
+    <div id="message_area">
+      <h3>Messages for the chef</h3>
+      <p id="message"></p>
+    </div>
+    <section id="kitchen_area">
+      <h3>Kitchen</h3>
+
+      <div id="kitchen_main">
+        <div class="kitchen_left">
+          <h4>Currently making: <em><strong><span id="current_pizza"></span></strong></span></em></span></h4>
+          <div>
+            <button  class="oven_btn">OVEN</button>
+            <button id='waste'  class="delete_btn">WASTE</button>
+          </div>
+          <canvas id="pizza_area" width="250px" height="250px"></canvas>
+        </div>
+        <div class="kitchen_right">
+          <div id="ingredients"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <aside id="orders">
+    <h3>Orders</h3>
+  </aside>
+  <script src="index.js"></script>
+</body>
+
+</html>
