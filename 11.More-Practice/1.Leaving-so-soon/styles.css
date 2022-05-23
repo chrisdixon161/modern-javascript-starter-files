@@ -1,0 +1,41 @@
+body {
+	min-height: 100vh;
+	text-align: center;
+	background: white;
+}
+
+#exit-popup {
+	background-color: rgba(0, 0, 0, 0.7);
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	animation: fadeIn 1s;
+}
+
+.exit-content {
+	background: white;
+	border-radius: 1rem;
+	min-width: 60vw;
+	padding: 1rem 1rem 2rem 1rem;
+}
+
+.close {
+	display: flex;
+	justify-content: flex-end;
+	cursor: pointer;
+	color: rgb(224, 91, 91);
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}

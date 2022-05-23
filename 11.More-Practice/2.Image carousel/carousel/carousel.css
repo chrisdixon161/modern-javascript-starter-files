@@ -1,0 +1,43 @@
+#carousel {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.carousel:hover {
+  cursor: pointer;
+}
+
+.large {
+  animation: fadeIn 1s;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.small {
+  width: 20%;
+}
+
+.small:hover {
+  opacity: 0.95;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#smallImageWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+span {
+  color: rgb(57, 57, 57);
+  font-size: 2rem;
+  cursor: pointer;
+}
