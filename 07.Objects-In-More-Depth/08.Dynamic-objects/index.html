@@ -1,37 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Dynamic Objects</title>
-  </head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Dynamic Objects</title>
+	</head>
 
-  <body>
-    <ul></ul>
-    <script>
-      function User(first, last, occupation, lives) {
-        this.firstName = first;
-        this.lastName = last;
-        this.occupation = occupation;
-        this.lives = lives;
-      }
+	<body>
+		<ul></ul>
+		<script>
+			function User(first, last, occupation, lives) {
+				this.firstName = first;
+				this.lastName = last;
+				this.occupation = occupation;
+				this.lives = lives;
+			}
 
-      const homer = new User(
-        'firstName',
-        'Simpson',
-        'Safety Inspector',
-        'Springfield'
-      );
+			const homer = new User(
+				"Homer",
+				"Simpson",
+				"Safety Inspector",
+				"Springfield"
+			);
 
-      // ADD TO DOM
-      const ul = document.querySelector('ul');
-      for (const [key, value] of Object.entries(homer)) {
-        const li = document.createElement('li');
-        const text = document.createTextNode(`${key}: ${value}`);
-        li.appendChild(text);
-        ul.appendChild(li);
-      }
-    </script>
-  </body>
+			// ADD TO DOM
+			const ul = document.querySelector("ul");
+			for (const [key, value] of Object.entries(homer)) {
+				const li = document.createElement("li");
+				const text = document.createTextNode(`${key}: ${value}`);
+				li.appendChild(text);
+				ul.appendChild(li);
+			}
+		</script>
+	</body>
 </html>
